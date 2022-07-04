@@ -1,0 +1,559 @@
+/* FONT  */
+
+@font-face {
+  font-family: "AlluraRegular";
+  src: local("AlluraRegular"),
+    url("../Assets/Font/Allura-Regular.ttf") format("truetype");
+  font-weight: regular 400;
+}
+
+@font-face {
+  font-family: "KarantinaBold";
+  src: local("KarantinaBold"),
+    url("../Assets/Font/Karantina-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "KdamThmorPro";
+  src: local("KdamThmorPro"),
+    url("../Assets/Font/KdamThmorPro-Regular.ttf") format("truetype");
+  font-weight: regular 400;
+}
+
+@font-face {
+  font-family: "LaBelleAurore";
+  src: local("LaBelleAurore"),
+    url("../Assets/Font/LaBelleAurore-Regular.ttf") format("truetype");
+  font-weight: regular 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.icon_nav {
+  color: black;
+}
+
+
+/* BOUTTON ICI */
+
+.btn_inscription, .btn_connexion {
+  background-color: #351a1a;
+  color: #d9ccb8;
+  font-family: "KarantinaBold";
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 120px;
+  margin: 50px 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn_connexion {
+  margin: 40px 0;
+}
+
+.button_contact {
+  width: 45%;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: "KarantinaBold";
+  background-color: #d9ccb8;
+  color: #351a1a;
+  border: none;
+  border-radius: 5px;
+  font-size: 26px;
+  margin-top: 30px;
+}
+
+.button_photo {
+  background-color: #351a1a;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "KarantinaBold";
+  font-size: 26px;
+  padding: 5px;
+}
+
+
+/* MOBILE */
+
+.nav_desktop {
+  display: none;
+}
+
+/* ACCUEIL MOBILE */
+
+main {
+  background-color: #ececec;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobile_accueil {
+  display: flex;
+  justify-content: center;
+}
+
+.image_mobile {
+  height: 80%;
+  width: 350px;
+  border: 5px solid white;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.7;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  margin-top: 10px;
+}
+
+.name_accueil > h1 {
+  color: #351a1a;
+  font-family: "KarantinaBold";
+  font-size: 45px;
+  position: relative;
+  z-index: 2;
+  background: none;
+  margin: 65% 13%;
+}
+
+.name_accueil > p {
+  color: #d9ccb8;
+  font-family: "AlluraRegular";
+  font-size: 41px;
+  position: relative;
+  z-index: 2;
+  background: none;
+  margin: -70% 25%;
+  padding-bottom: 100%;
+}
+
+.nav_mobile,
+.nav_mobile_deux {
+  position: fixed;
+  bottom: 0;
+  background: #d9ccb8;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "KarantinaBold";
+  font-size: 25px;
+}
+
+.mobile_h1 {
+  font-family: "LaBelleAurore";
+  text-align: center;
+  font-size: 20px;
+  background-color: #ececec;
+  padding-top: 10px;
+}
+/* INCRIPTION */
+
+.main_inscription {
+  height: 100vh;
+  margin-top: -50px;
+}
+
+.inscription_formulaire {
+  background-color: #d9ccb8;
+  color: #351a1a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 50px 15px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inscription_formulaire > h3 {
+  font-family: "KarantinaBold";
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.nom_prenom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nom_prenom > input {
+  width: 45%;
+  height: 25px;
+  border: none;
+  margin: 60px 0 5px 0;
+  text-align: center;
+}
+
+.email_tel_password > input {
+  border: none;
+  height: 25px;
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+
+/* CONNEXION */
+/* PORTFOLIO */
+
+.main_portfolio > article {
+  margin-left: 5%;
+}
+
+.image_une {
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+}
+
+.image_deux {
+  height: auto;
+  width: 46%;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  margin-top: 2%;
+}
+.image_trois {
+  height: auto;
+  width: 46%;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  margin-left: 10px;
+}
+
+.image_quatre {
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  margin-top: 2%;
+  margin-bottom: 20%;
+}
+/* TARIFS */
+
+.main_tarifs {
+  margin-bottom: 40px;
+}
+
+.card__tarif > h3 {
+  font-size: 35px;
+  padding: 10px;
+  margin: 0;
+}
+
+.card__tarif > p {
+  padding-top: 10%;
+  font-family: "karantinaBold";
+  font-size: 1.5rem;
+}
+
+.tarifs_p {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.barre_h1 {
+  border-top: 2px solid;
+  width: auto;
+  margin: 0 35px;
+}
+
+.card_classique {
+  background-color: #d9ccb8;
+  color: #351a1a;
+  text-align: center;
+  margin: 10%;
+  padding: 0px 25px;
+  border-radius: 5px;
+  border: 5px solid white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  font-family: "KarantinaBold";
+  font-size: 16px;
+}
+
+.card_standard {
+  background-color: #351a1ab3;
+  color: #d9ccb8;
+  text-align: center;
+  margin: 10%;
+  padding: 0px 25px;
+  border-radius: 5px;
+  border: 5px solid white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  font-family: "KarantinaBold";
+  font-size: 22px;
+}
+
+.card_prestige {
+  background-color: #351a1a;
+  color: #d9ccb8;
+  text-align: center;
+  margin: 10% 10% 30%;
+  padding: 0px 25px;
+  border-radius: 5px;
+  border: 5px solid white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  font-family: "KarantinaBold";
+  font-size: 22px;
+}
+
+/* CONTACT */
+
+.reseaux_sociaux {
+  background-color: #d9ccb8;
+  border-radius: 5px;
+  border: 5px solid white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  margin: 5%;
+}
+
+.main_contact > h3 {
+  font-family: "KarantinaBold";
+  font-size: 30px;
+  color: #351a1a;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline 2px solid #351a1a;
+  text-transform: uppercase;
+}
+
+.icon_reseaux {
+  height: 3rem;
+  color: #351a1a;
+}
+
+.article_contact {
+  background-color: #351a1ac1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 50px 15px;
+  height: auto;
+  padding: 15px;
+}
+
+.article_contact > h3 {
+  color: #d9ccb8;
+  font-family: "KarantinaBold";
+  font-size: 30px;
+  text-decoration: underline 2px solid #d9ccb8;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.np_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.np_contact > input {
+  width: 40%;
+}
+
+.eo_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.eo_contact > input {
+  width: 40%;
+}
+
+.message_text {
+  width: 99%;
+  height: 200px;
+  margin-top: 20px;
+  text-align: top;
+}
+
+
+
+/* MON COMPTE */
+
+.card_comptes > h4 {
+  font-family: "KarantinaBold";
+  font-size: 45px;
+  margin: 15px 0;
+  padding: 15px 0px;
+}
+
+.card_comptes > p {
+  font-family: "KdamThmorPro";
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.barre_compte {
+  border-top: 2px solid rgba(0, 0, 0, 0.747);
+  width: auto;
+  margin: 15px 100px;
+}
+
+.sciara_compte {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid white;
+}
+
+.compte_card {
+  margin: 50px 15px;
+  background-color: #d9ccb8;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+}
+
+.card_compte {
+  background-color: #e8ddcb;
+  text-align: center;
+  margin: 20px 0;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+
+
+.photo_lien {
+  color: #d9ccb8;
+  text-decoration: none;
+}
+
+.chevron_un {
+  color: #ffff;
+}
+
+.chevron_deux {
+  color: #d9ccb87b;
+}
+
+.chevron_trois {
+  color: #d9ccb8;
+}
+
+/* CONNEXION */
+
+
+.img_connexion {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 28%;
+  z-index: 2;
+}
+
+.container_connexion {
+  background-color: #d9ccb8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 140px 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+  border: 5px solid white;
+  z-index: 1;
+}
+
+.email_input, .password_input {
+  height: 40px;
+  width: 75%;
+  text-align: center;
+  border: none;
+}
+
+.email_input {
+  margin-top: 100px;
+}
+
+.password_input {
+  margin-top: 15px;
+}
+
+
+
+@media screen and (min-width: 640px) {
+  /* * {
+    overflow: hidden;
+  } */
+
+  .nav_mobile {
+    height: 8%;
+    font-size: 2rem;
+  }
+
+  .image_mobile {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .name_accueil > h1 {
+    margin: 80% 18%;
+  }
+
+  .name_accueil > p {
+    margin: -85% 30%;
+  }
+/* CONNEXION */
+
+
+ /* PORTFOLIO */
+
+
+  .main_portfolio > article {
+    margin-left: 5%;
+  }
+
+  .image_une,
+  .image_quatre {
+    width: 94%;
+  }
+
+  .image_deux,
+  .image_trois {
+    width: 45%;
+    height: auto;
+  }
+
+  .image_trois {
+    margin-left: 4%;
+  }
+}
